@@ -29,14 +29,15 @@ public class xkcdpwgen {
             // Command c = new Command(new InputStreamReader(System.in));
             // c.generatePassword();
             generatePassword();
-        } else if (args.length > 0) {
+        } else { //if (args.length > 0) 
             // parse input to generate password
             // Command c = new Command(new InputStreamReader(System.in));
             // c.startProcessingArgs(args);
             startProcessingArgs(args);
-        } else {
-            throw new IllegalArgumentException("Program does not support the given input.");
-        }
+        } 
+        // else {
+        //     throw new IllegalArgumentException("Program does not support the given input.");
+        // }
 
     }
 
