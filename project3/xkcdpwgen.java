@@ -210,7 +210,7 @@ public class xkcdpwgen {
     }
 
     private static void printMessage(String str) {
-        System.out.print(str + "\n");
+        System.out.print(str);
     }
 
     
