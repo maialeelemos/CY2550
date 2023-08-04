@@ -105,8 +105,8 @@ public class xkcdpwgen {
                     words--;
 
                 } catch(IOException e){
-                    printMessage("Could not read words.txt file");
-                    // printMessage(e);
+                    System.err.println("Error. Please try again");
+                    System.exit(1);
                 }
             }
 
@@ -177,8 +177,9 @@ public class xkcdpwgen {
                         result = result + symbolC;
                     }
                     symbols--;
-                } catch (IOException e) {
-                    printMessage("Could not read symbols.txt file. Please try again");
+                } catch(IOException e){
+                    System.err.println("Error. Please try again");
+                    System.exit(1);
                 } // there could be an error with above try-catch
             }
         }
