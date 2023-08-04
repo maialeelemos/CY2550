@@ -70,7 +70,8 @@ public class xkcdpwgen {
         // System.out.println("End of processing.");
 
         if (caps > words) {
-            printMessage("Cannot have more capital letters than words. Please try again.");
+            System.err.println("Error. Please try again");
+            System.exit(1);
         } else if (help) {
             // do nothing since message was already printed.
         } else {
@@ -212,7 +213,7 @@ public class xkcdpwgen {
     }
 
     private static void printMessage(String str) {
-        System.out.print(str);
+        System.out.println(str);
     }
 
     
